@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" width="100" height="60">
+  <defs>
+    <linearGradient id="aeGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#a89bff"/>
+      <stop offset="50%" stop-color="#6d5dff"/>
+      <stop offset="100%" stop-color="#a89bff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(5, 5)">
+    <path d="M 25 25
+             C 25 13, 38 13, 45 25
+             C 52 37, 65 37, 65 25
+             C 65 13, 52 13, 45 25
+             C 38 37, 25 37, 25 25 Z"
+          fill="none"
+          stroke="url(#aeGrad)"
+          stroke-width="5"
+          stroke-linecap="round"/>
+    <circle cx="25" cy="25" r="6" fill="#ffffff"/>
+    <circle cx="25" cy="25" r="2.5" fill="#0f0a2e"/>
+    <circle cx="65" cy="25" r="6" fill="url(#aeGrad)"/>
+    <circle cx="65" cy="25" r="2.5" fill="#ffffff"/>
+  </g>
+</svg>

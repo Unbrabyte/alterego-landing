@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="aeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a89bff"/>
+      <stop offset="100%" stop-color="#5544c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f0a2e"/>
+  <g transform="translate(7, 17)">
+    <path d="M 8 15
+             C 8 7, 18 7, 25 15
+             C 32 23, 42 23, 42 15
+             C 42 7, 32 7, 25 15
+             C 18 23, 8 23, 8 15 Z"
+          fill="none"
+          stroke="url(#aeGrad)"
+          stroke-width="3.5"
+          stroke-linecap="round"/>
+    <circle cx="8" cy="15" r="4" fill="#ffffff"/>
+    <circle cx="42" cy="15" r="4" fill="url(#aeGrad)"/>
+    <circle cx="42" cy="15" r="1.6" fill="#ffffff"/>
+  </g>
+</svg>
