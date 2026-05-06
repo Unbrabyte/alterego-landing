@@ -30,9 +30,61 @@
         });
     }
 
+    // Contact form
+    const form = document.getElementById('contactForm');
+    const successEl = document.getElementById('formSuccess');
+    const errorEl = document.getElementById('formError');
+    const submitBtn = document.getElementById('formSubmitBtn');
+
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Hide previous messages
+            errorEl.classList.remove('is-visible');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                company: form.company.value || 'No especificada',
+                message: form.message.value,
+                _subject: 'Demo Alter Ego — ' + form.name.value,
+                _captcha: 'false'
+            };
+
+            try {
+                const res = await fetch('https://formsubmit.co/ajax/info@unbrabyte.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await res.json();
+
+                if (result.success === 'true' || res.ok) {
+                    form.style.display = 'none';
+                    successEl.classList.add('is-visible');
+                } else {
+                    errorEl.classList.add('is-visible');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Enviar mensaje <span class="btn-arrow">→</span>';
+                }
+            } catch (err) {
+                errorEl.classList.add('is-visible');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Enviar mensaje <span class="btn-arrow">→</span>';
+            }
+        });
+    }
+
     // Reveal on scroll
     const targets = document.querySelectorAll(
-        '.section-head, .card, .feature, .feature-spotlight, .stat-card, .enterprise-feat, .replace-box, .quote, .cta-inner > *'
+        '.section-head, .card, .feature, .feature-spotlight, .stat-card, .enterprise-feat, .replace-box, .quote, .contact-form-wrap'
     );
     targets.forEach(el => el.classList.add('reveal'));
 
@@ -48,8 +100,6 @@
 
         targets.forEach(el => io.observe(el));
 
-        // Safety net: reveal everything after 2s if observer missed anything
-        // (e.g., headless screenshots, instant scrolls, prerender)
         setTimeout(() => {
             targets.forEach(el => el.classList.add('is-visible'));
         }, 2000);
