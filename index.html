@@ -55,7 +55,7 @@
             <a href="#empresas">Empresas</a>
         </nav>
 
-        <a class="btn btn-primary btn-sm" href="mailto:info@unbrabyte.com?subject=Demo%20Alter%20Ego">Solicitar demo</a>
+        <a class="btn btn-primary btn-sm" href="#contacto">Solicitar demo</a>
 
         <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -84,7 +84,7 @@
         </p>
 
         <div class="hero-cta">
-            <a class="btn btn-primary" href="mailto:info@unbrabyte.com?subject=Demo%20Alter%20Ego">Solicitar demo</a>
+            <a class="btn btn-primary" href="#contacto">Solicitar demo</a>
             <a class="btn btn-ghost" href="#producto">Ver cómo funciona <span class="btn-arrow">→</span></a>
         </div>
 
@@ -384,29 +384,63 @@
     </div>
 </section>
 
-<!-- ============== CTA FINAL ============== -->
+<!-- ============== CONTACTO — FORMULARIO ============== -->
 <section class="section cta-section" id="contacto">
-    <div class="container cta-inner">
-        <span class="pill">
-            <span class="pill-dot"></span>
-            Empezá hoy
-        </span>
-        <h2 class="cta-title">
-            Empezá hoy. Tu equipo lo
-            <span class="grad-text">agradece.</span>
-        </h2>
-        <p class="cta-sub">
-            Demo sin costo, configuración en minutos, soporte real desde el primer día.
-            No necesitás saber de IA ni programar para usar Alter Ego —
-            está hecho para personas, no para ingenieros.
-        </p>
-        <div class="cta-actions">
-            <a class="btn btn-primary btn-lg" href="https://alterego-app.unbrabyte.com" target="_blank" rel="noopener">
-                Ir a la plataforma <span class="btn-arrow">→</span>
-            </a>
-            <a class="btn btn-ghost btn-lg" href="mailto:info@unbrabyte.com?subject=Demo%20Alter%20Ego">
-                Solicitar demo
-            </a>
+    <div class="container">
+        <header class="section-head" style="text-align:center; margin-left:auto; margin-right:auto;">
+            <span class="pill">
+                <span class="pill-dot"></span>
+                Empezá hoy
+            </span>
+            <h2 class="cta-title">
+                Solicitar una
+                <span class="grad-text">demo gratuita.</span>
+            </h2>
+            <p class="cta-sub" style="margin-left:auto; margin-right:auto;">
+                Completá el formulario y nos ponemos en contacto con vos.
+                Demo sin costo, configuración en minutos, soporte real desde el primer día.
+            </p>
+        </header>
+
+        <div class="contact-form-wrap">
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess">
+                <div class="form-success-icon">✓</div>
+                <h3>Mensaje enviado</h3>
+                <p>Gracias por tu interés. Nos ponemos en contacto pronto.</p>
+            </div>
+
+            <!-- Error message (hidden by default) -->
+            <div class="form-error" id="formError">
+                <p>Hubo un error al enviar. Por favor intentá de nuevo.</p>
+            </div>
+
+            <!-- Contact form -->
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Empresa <span class="form-optional">(opcional)</span></label>
+                    <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required rows="5" placeholder="Contanos qué necesitás o preguntanos lo que quieras"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg form-submit" id="formSubmitBtn">
+                    Enviar mensaje <span class="btn-arrow">→</span>
+                </button>
+            </form>
         </div>
     </div>
 </section>
