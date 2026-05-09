@@ -714,7 +714,7 @@ ul { list-style: none; }
     border-color: rgba(123, 103, 255, 0.3);
     transform: translateY(-2px);
 }
-.enterprise-feat h4 {
+.enterprise-feat h3 {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
