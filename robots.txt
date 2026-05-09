@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alterego.unbrabyte.com/sitemap.xml
