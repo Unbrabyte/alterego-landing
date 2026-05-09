@@ -265,6 +265,27 @@ ul { list-style: none; }
 }
 .nav a:hover { color: var(--text); }
 
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
+.lang-switch {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #a0aec0;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    padding: .35rem .7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+.lang-switch:hover {
+    background: rgba(255,255,255,.1);
+    color: #fff;
+}
+
 .nav-toggle {
     display: none;
     width: 42px;

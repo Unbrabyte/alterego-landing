@@ -50,12 +50,13 @@
         </a>
 
         <nav class="nav" aria-label="Navegación principal">
-            <a href="#producto">Producto</a>
-            <a href="#funciones">Funciones</a>
-            <a href="#empresas">Empresas</a>
+            <a href="#producto" data-i18n="nav.product">Producto</a>
+            <a href="#funciones" data-i18n="nav.features">Funciones</a>
+            <a href="#empresas" data-i18n="nav.enterprise">Empresas</a>
         </nav>
 
-        <a class="btn btn-primary btn-sm" href="#contacto">Solicitar demo</a>
+        <button class="lang-switch" id="langSwitch" aria-label="Switch language">EN</button>
+        <a class="btn btn-primary btn-sm" href="#contacto" data-i18n="nav.demo">Solicitar demo</a>
 
         <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -70,28 +71,28 @@
     <div class="container hero-inner">
         <span class="pill">
             <span class="pill-dot"></span>
-            Plataforma de bots conversacionales IA
+            <span data-i18n="hero.pill">Plataforma de bots conversacionales IA</span>
         </span>
 
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-i18n-html="hero.title.full">
             Tu asistente IA,
             <span class="grad-text">en tu negocio.</span>
         </h1>
 
-        <p class="hero-sub">
+        <p class="hero-sub" data-i18n="hero.subtitle">
             Conversaciones, leads, contactos y atención automatizada — todo en un lugar.
             Diseñado para que tu equipo trabaje más eficientemente y tus clientes estén más atendidos.
         </p>
 
         <div class="hero-cta">
-            <a class="btn btn-primary" href="#contacto">Solicitar demo</a>
-            <a class="btn btn-ghost" href="#producto">Ver cómo funciona <span class="btn-arrow">→</span></a>
+            <a class="btn btn-primary" href="#contacto" data-i18n="hero.cta.demo">Solicitar demo</a>
+            <a class="btn btn-ghost" href="#producto" data-i18n-html="hero.cta.how.full">Ver cómo funciona <span class="btn-arrow">→</span></a>
         </div>
 
         <ul class="hero-tags">
-            <li><span class="tag-dot tag-dot-cyan"></span>WhatsApp &amp; Web</li>
-            <li><span class="tag-dot tag-dot-blue"></span>IA Conversacional</li>
-            <li><span class="tag-dot tag-dot-violet"></span>Multi-canal</li>
+            <li><span class="tag-dot tag-dot-cyan"></span><span data-i18n="hero.tag.whatsapp">WhatsApp &amp; Web</span></li>
+            <li><span class="tag-dot tag-dot-blue"></span><span data-i18n="hero.tag.ai">IA Conversacional</span></li>
+            <li><span class="tag-dot tag-dot-violet"></span><span data-i18n="hero.tag.multi">Multi-canal</span></li>
         </ul>
     </div>
 </section>
@@ -100,12 +101,12 @@
 <section class="section" id="producto">
     <div class="container">
         <header class="section-head">
-            <span class="kicker">Para tu empresa</span>
-            <h2 class="section-title">
+            <span class="kicker" data-i18n="producto.kicker">Para tu empresa</span>
+            <h2 class="section-title" data-i18n-html="producto.title.full">
                 El asistente que tu empresa
                 <span class="grad-text">estaba esperando.</span>
             </h2>
-            <p class="section-sub">
+            <p class="section-sub" data-i18n="producto.subtitle">
                 Alter Ego es la plataforma que unifica todo lo que necesita tu equipo de atención:
                 gestioná desde tu panel, mantené a tus clientes informados y respondidos 24/7.
                 Sin colas de espera, sin clientes perdidos, sin respuestas tarde.
@@ -122,8 +123,8 @@
                         <path d="M12 6V3M9 3h6"/>
                     </svg>
                 </div>
-                <h3>Para tu negocio</h3>
-                <p>Atendé miles de consultas en simultáneo con bots inteligentes que aprenden y se adaptan a tu marca.</p>
+                <h3 data-i18n="producto.card1.title">Para tu negocio</h3>
+                <p data-i18n="producto.card1.text">Atendé miles de consultas en simultáneo con bots inteligentes que aprenden y se adaptan a tu marca.</p>
             </article>
 
             <article class="card card-hover">
@@ -132,20 +133,20 @@
                         <path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/>
                     </svg>
                 </div>
-                <h3>Para tus clientes</h3>
-                <p>Respuesta inmediata, atención personalizada. Todo queda registrado para una experiencia consistente y profesional.</p>
+                <h3 data-i18n="producto.card2.title">Para tus clientes</h3>
+                <p data-i18n="producto.card2.text">Respuesta inmediata, atención personalizada. Todo queda registrado para una experiencia consistente y profesional.</p>
             </article>
         </div>
 
         <div class="replace-box">
-            <div class="replace-head">Lo que Alter Ego reemplaza</div>
+            <div class="replace-head" data-i18n="producto.replace.title">Lo que Alter Ego reemplaza</div>
             <ul class="replace-grid">
-                <li><span class="replace-bullet">×</span>Bandejas de mail saturadas</li>
-                <li><span class="replace-bullet">×</span>Operadores agotados de repetir lo mismo</li>
-                <li><span class="replace-bullet">×</span>Llamadas sin respuesta fuera de horario</li>
-                <li><span class="replace-bullet">×</span>Clientes esperando horas por una respuesta</li>
-                <li><span class="replace-bullet">×</span>Datos perdidos en planillas dispersas</li>
-                <li><span class="replace-bullet">×</span>Consultas olvidadas que nadie siguió</li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.1">Bandejas de mail saturadas</span></li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.2">Operadores agotados de repetir lo mismo</span></li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.3">Llamadas sin respuesta fuera de horario</span></li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.4">Clientes esperando horas por una respuesta</span></li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.5">Datos perdidos en planillas dispersas</span></li>
+                <li><span class="replace-bullet">×</span><span data-i18n="producto.replace.6">Consultas olvidadas que nadie siguió</span></li>
             </ul>
         </div>
     </div>
@@ -155,8 +156,8 @@
 <section class="section section-tinted" id="funciones">
     <div class="container">
         <header class="section-head">
-            <span class="kicker">Módulo conversacional</span>
-            <h2 class="section-title">
+            <span class="kicker" data-i18n="funciones.kicker">Módulo conversacional</span>
+            <h2 class="section-title" data-i18n-html="funciones.title.full">
                 Atender clientes nunca fue
                 <span class="grad-text">tan inteligente.</span>
             </h2>
@@ -174,8 +175,8 @@
                 </svg>
             </div>
             <div>
-                <h3>Bot IA con personalidad <span class="grad-text">propia</span></h3>
-                <p>
+                <h3 data-i18n-html="funciones.spotlight.title.full">Bot IA con personalidad <span class="grad-text">propia</span></h3>
+                <p data-i18n="funciones.spotlight.text">
                     Configurás el tono, el conocimiento y el estilo del bot. Alter Ego conversa como tu marca,
                     responde con contexto y aprende de cada interacción. Todo automático. Todo natural.
                 </p>
@@ -185,33 +186,33 @@
         <div class="grid grid-3 features-list">
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Personalidad configurable</h4>
-                <p>Definí el tono, registro, estilo y carácter del asistente.</p>
+                <h4 data-i18n="funciones.feat1.title">Personalidad configurable</h4>
+                <p data-i18n="funciones.feat1.text">Definí el tono, registro, estilo y carácter del asistente.</p>
             </article>
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Prompts del sistema</h4>
-                <p>Instrucciones detalladas para que el bot actúe como un experto.</p>
+                <h4 data-i18n="funciones.feat2.title">Prompts del sistema</h4>
+                <p data-i18n="funciones.feat2.text">Instrucciones detalladas para que el bot actúe como un experto.</p>
             </article>
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Conversaciones 24/7</h4>
-                <p>Tu negocio no duerme. Tu bot tampoco.</p>
+                <h4 data-i18n="funciones.feat3.title">Conversaciones 24/7</h4>
+                <p data-i18n="funciones.feat3.text">Tu negocio no duerme. Tu bot tampoco.</p>
             </article>
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Historial completo</h4>
-                <p>Todas las conversaciones registradas, buscables y exportables.</p>
+                <h4 data-i18n="funciones.feat4.title">Historial completo</h4>
+                <p data-i18n="funciones.feat4.text">Todas las conversaciones registradas, buscables y exportables.</p>
             </article>
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Probador de bots</h4>
-                <p>Testeá tu bot antes de salir a producción. Iterá sin riesgo.</p>
+                <h4 data-i18n="funciones.feat5.title">Probador de bots</h4>
+                <p data-i18n="funciones.feat5.text">Testeá tu bot antes de salir a producción. Iterá sin riesgo.</p>
             </article>
             <article class="feature">
                 <span class="feature-bullet"></span>
-                <h4>Multi-idioma</h4>
-                <p>Atendé en español, inglés o el idioma que necesite tu mercado.</p>
+                <h4 data-i18n="funciones.feat6.title">Multi-idioma</h4>
+                <p data-i18n="funciones.feat6.text">Atendé en español, inglés o el idioma que necesite tu mercado.</p>
             </article>
         </div>
 
@@ -223,16 +224,16 @@
                 </svg>
             </div>
             <div>
-                <h4>Integración con WhatsApp Business</h4>
-                <p>
+                <h4 data-i18n="funciones.whatsapp.title">Integración con WhatsApp Business</h4>
+                <p data-i18n="funciones.whatsapp.text">
                     Conectá tu instancia de WhatsApp y empezá a atender clientes desde el mismo número que ya usan.
                     Cero fricción. Cero apps nuevas para descargar. Tu cliente, donde ya está.
                 </p>
                 <div class="chip-row">
-                    <span class="chip">WhatsApp Business</span>
-                    <span class="chip">Web embebido</span>
-                    <span class="chip">API REST</span>
-                    <span class="chip">Notificaciones</span>
+                    <span class="chip" data-i18n="funciones.chip.whatsapp">WhatsApp Business</span>
+                    <span class="chip" data-i18n="funciones.chip.web">Web embebido</span>
+                    <span class="chip" data-i18n="funciones.chip.api">API REST</span>
+                    <span class="chip" data-i18n="funciones.chip.notif">Notificaciones</span>
                 </div>
             </div>
         </div>
@@ -243,12 +244,12 @@
 <section class="section">
     <div class="container">
         <header class="section-head">
-            <span class="kicker">Datos de tu negocio</span>
-            <h2 class="section-title">
+            <span class="kicker" data-i18n="datos.kicker">Datos de tu negocio</span>
+            <h2 class="section-title" data-i18n-html="datos.title.full">
                 Tu base de datos siempre
                 <span class="grad-text">organizada.</span>
             </h2>
-            <p class="section-sub">
+            <p class="section-sub" data-i18n="datos.subtitle">
                 Cada conversación es una oportunidad. Alter Ego captura, organiza y deriva la información
                 automáticamente. Nunca más perdés un lead, una consulta o un contacto importante.
             </p>
@@ -262,8 +263,8 @@
                         <path d="M14 3v6h6M9 13h6M9 17h4"/>
                     </svg>
                 </div>
-                <h3>Formularios inteligentes</h3>
-                <p>Creá formularios que el bot completa charlando con el cliente. Sin formularios fríos. Datos limpios y completos en cada conversación.</p>
+                <h3 data-i18n="datos.card1.title">Formularios inteligentes</h3>
+                <p data-i18n="datos.card1.text">Creá formularios que el bot completa charlando con el cliente. Sin formularios fríos. Datos limpios y completos en cada conversación.</p>
             </article>
 
             <article class="card card-hover">
@@ -275,8 +276,8 @@
                         <path d="M14 21a6 6 0 0 1 8-5.4"/>
                     </svg>
                 </div>
-                <h3>Contactos centralizados</h3>
-                <p>Toda la información de cada cliente en un solo lugar. Historial, preferencias, etiquetas y datos de contacto siempre actualizados.</p>
+                <h3 data-i18n="datos.card2.title">Contactos centralizados</h3>
+                <p data-i18n="datos.card2.text">Toda la información de cada cliente en un solo lugar. Historial, preferencias, etiquetas y datos de contacto siempre actualizados.</p>
             </article>
 
             <article class="card card-hover">
@@ -285,8 +286,8 @@
                         <path d="M4 7h11l-3-3M4 7l3 3M20 17H9l3 3M20 17l-3-3"/>
                     </svg>
                 </div>
-                <h3>Derivaciones a humanos</h3>
-                <p>Cuando el bot detecta que necesita ayuda humana, transfiere la conversación a un agente con todo el contexto previo.</p>
+                <h3 data-i18n="datos.card3.title">Derivaciones a humanos</h3>
+                <p data-i18n="datos.card3.text">Cuando el bot detecta que necesita ayuda humana, transfiere la conversación a un agente con todo el contexto previo.</p>
             </article>
 
             <article class="card card-hover">
@@ -295,16 +296,16 @@
                         <path d="M3 11l18-8-7 18-3-7-8-3z"/>
                     </svg>
                 </div>
-                <h3>Envíos masivos</h3>
-                <p>Mandá comunicaciones, promociones o avisos a tus contactos segmentados con plantillas dinámicas y trazabilidad completa.</p>
+                <h3 data-i18n="datos.card4.title">Envíos masivos</h3>
+                <p data-i18n="datos.card4.text">Mandá comunicaciones, promociones o avisos a tus contactos segmentados con plantillas dinámicas y trazabilidad completa.</p>
             </article>
         </div>
 
         <figure class="quote">
-            <blockquote>
+            <blockquote data-i18n="datos.quote">
                 "El cliente deja de esperar respuestas. El equipo deja de repetir lo mismo cien veces al día."
             </blockquote>
-            <figcaption>Diseñado para que la IA trabaje por vos</figcaption>
+            <figcaption data-i18n="datos.quote.caption">Diseñado para que la IA trabaje por vos</figcaption>
         </figure>
     </div>
 </section>
@@ -313,12 +314,12 @@
 <section class="section section-tinted" id="empresas">
     <div class="container">
         <header class="section-head">
-            <span class="kicker">Configuración profesional</span>
-            <h2 class="section-title">
+            <span class="kicker" data-i18n="empresas.kicker">Configuración profesional</span>
+            <h2 class="section-title" data-i18n-html="empresas.title.full">
                 Para empresas que quieren
                 <span class="grad-text">escalar, no saturarse.</span>
             </h2>
-            <p class="section-sub">
+            <p class="section-sub" data-i18n="empresas.subtitle">
                 Alter Ego se adapta a tu negocio, no al revés. Manejá uno o varios bots con la
                 misma facilidad. Todo medible, todo configurable, todo en orden.
             </p>
@@ -327,7 +328,7 @@
         <div class="stats-grid">
             <article class="stat-card">
                 <div class="stat-num">∞</div>
-                <div class="stat-lbl">Conversaciones simultáneas, sin límites de capacidad</div>
+                <div class="stat-lbl" data-i18n="empresas.stat.label">Conversaciones simultáneas, sin límites de capacidad</div>
             </article>
         </div>
 
@@ -340,8 +341,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h4>Multi-proyecto</h4>
-                    <p>Manejá distintos bots para distintas marcas o productos desde un solo panel. Cambiá entre proyectos con un clic.</p>
+                    <h4 data-i18n="empresas.feat1.title">Multi-proyecto</h4>
+                    <p data-i18n="empresas.feat1.text">Manejá distintos bots para distintas marcas o productos desde un solo panel. Cambiá entre proyectos con un clic.</p>
                 </div>
             </article>
             <article class="enterprise-feat">
@@ -352,8 +353,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h4>Módulos configurables</h4>
-                    <p>Activá o desactivá funcionalidades según tu necesidad. Configurá horarios, idiomas, derivaciones y mucho más.</p>
+                    <h4 data-i18n="empresas.feat2.title">Módulos configurables</h4>
+                    <p data-i18n="empresas.feat2.text">Activá o desactivá funcionalidades según tu necesidad. Configurá horarios, idiomas, derivaciones y mucho más.</p>
                 </div>
             </article>
             <article class="enterprise-feat">
@@ -364,8 +365,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h4>Dashboard de métricas</h4>
-                    <p>Conversaciones, contactos, bots activos, derivaciones — todo en tiempo real. Tomá decisiones con datos reales.</p>
+                    <h4 data-i18n="empresas.feat3.title">Dashboard de métricas</h4>
+                    <p data-i18n="empresas.feat3.text">Conversaciones, contactos, bots activos, derivaciones — todo en tiempo real. Tomá decisiones con datos reales.</p>
                 </div>
             </article>
             <article class="enterprise-feat">
@@ -376,8 +377,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h4>Gestión de usuarios</h4>
-                    <p>Sumá miembros de tu equipo con distintos roles y permisos. Cada uno con su propio acceso y trazabilidad.</p>
+                    <h4 data-i18n="empresas.feat4.title">Gestión de usuarios</h4>
+                    <p data-i18n="empresas.feat4.text">Sumá miembros de tu equipo con distintos roles y permisos. Cada uno con su propio acceso y trazabilidad.</p>
                 </div>
             </article>
         </div>
@@ -390,13 +391,13 @@
         <header class="section-head" style="text-align:center; margin-left:auto; margin-right:auto;">
             <span class="pill">
                 <span class="pill-dot"></span>
-                Empezá hoy
+                <span data-i18n="contacto.pill">Empezá hoy</span>
             </span>
-            <h2 class="cta-title">
+            <h2 class="cta-title" data-i18n-html="contacto.title.full">
                 Solicitar una
                 <span class="grad-text">demo gratuita.</span>
             </h2>
-            <p class="cta-sub" style="margin-left:auto; margin-right:auto;">
+            <p class="cta-sub" style="margin-left:auto; margin-right:auto;" data-i18n="contacto.subtitle">
                 Completá el formulario y nos ponemos en contacto con vos.
                 Demo sin costo, configuración en minutos, soporte real desde el primer día.
             </p>
@@ -406,38 +407,38 @@
             <!-- Success message (hidden by default) -->
             <div class="form-success" id="formSuccess">
                 <div class="form-success-icon">✓</div>
-                <h3>Mensaje enviado</h3>
-                <p>Gracias por tu interés. Nos ponemos en contacto pronto.</p>
+                <h3 data-i18n="contacto.success.title">Mensaje enviado</h3>
+                <p data-i18n="contacto.success.text">Gracias por tu interés. Nos ponemos en contacto pronto.</p>
             </div>
 
             <!-- Error message (hidden by default) -->
             <div class="form-error" id="formError">
-                <p>Hubo un error al enviar. Por favor intentá de nuevo.</p>
+                <p data-i18n="contacto.error.text">Hubo un error al enviar. Por favor intentá de nuevo.</p>
             </div>
 
             <!-- Contact form -->
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+                    <label for="name" data-i18n="contacto.label.name">Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre" data-i18n-placeholder="contacto.placeholder.name" />
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+                    <label for="email" data-i18n="contacto.label.email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com" data-i18n-placeholder="contacto.placeholder.email" />
                 </div>
 
                 <div class="form-group">
-                    <label for="company">Empresa <span class="form-optional">(opcional)</span></label>
-                    <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" />
+                    <label for="company" data-i18n-html="contacto.label.company.full">Empresa <span class="form-optional">(opcional)</span></label>
+                    <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" data-i18n-placeholder="contacto.placeholder.company" />
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" required rows="5" placeholder="Contanos qué necesitás o preguntanos lo que quieras"></textarea>
+                    <label for="message" data-i18n="contacto.label.message">Mensaje</label>
+                    <textarea id="message" name="message" required rows="5" placeholder="Contanos qué necesitás o preguntanos lo que quieras" data-i18n-placeholder="contacto.placeholder.message"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-lg form-submit" id="formSubmitBtn">
+                <button type="submit" class="btn btn-primary btn-lg form-submit" id="formSubmitBtn" data-i18n-html="contacto.submit.full">
                     Enviar mensaje <span class="btn-arrow">→</span>
                 </button>
             </form>
@@ -471,13 +472,14 @@
             <span class="brand-text">Alter<span class="brand-text-accent">Ego</span></span>
         </a>
 
-        <p class="footer-copy">
+        <p class="footer-copy" data-i18n-html="footer.copy.full">
             © <span id="year"></span> Alter Ego — Producto de
             <a href="https://www.unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.
         </p>
     </div>
 </footer>
 
+<script src="assets/i18n.js"></script>
 <script src="assets/script.js"></script>
 <script src="https://app.alterego.unbrabyte.com/widget.js" data-token="fd906ed3-3cdf-4804-b8b1-04dcbc4ab0d3"></script>
 </body>

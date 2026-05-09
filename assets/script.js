@@ -43,7 +43,8 @@
             // Hide previous messages
             errorEl.classList.remove('is-visible');
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Enviando...';
+            var sendingText = (window.AlterEgoI18n && window.AlterEgoI18n.t('contacto.submitting')) || 'Enviando...';
+            submitBtn.textContent = sendingText;
 
             const data = {
                 name: form.name.value,
@@ -72,7 +73,7 @@
                 } else {
                     errorEl.classList.add('is-visible');
                     submitBtn.disabled = false;
-                    submitBtn.innerHTML = 'Enviar mensaje <span class="btn-arrow">→</span>';
+                    submitBtn.innerHTML = (window.AlterEgoI18n && window.AlterEgoI18n.t('contacto.submit.full')) || 'Enviar mensaje <span class="btn-arrow">→</span>';
                 }
             } catch (err) {
                 errorEl.classList.add('is-visible');
