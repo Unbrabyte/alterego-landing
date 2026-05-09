@@ -491,5 +491,44 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/script.js"></script>
 <script src="https://app.alterego.unbrabyte.com/widget.js" data-token="fd906ed3-3cdf-4804-b8b1-04dcbc4ab0d3"></script>
+
+<!-- GA4 Event Tracking -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Track "Solicitar demo" button clicks
+  document.querySelectorAll('a[href="#contacto"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'demo_request_click', {
+        event_category: 'conversion',
+        event_label: el.textContent.trim(),
+        landing: 'alterego'
+      });
+    });
+  });
+
+  // Track contact form submission
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function() {
+      gtag('event', 'form_submission', {
+        event_category: 'conversion',
+        event_label: 'contact_form',
+        landing: 'alterego'
+      });
+    });
+  }
+
+  // Track language switch
+  var langSwitch = document.getElementById('langSwitch');
+  if (langSwitch) {
+    langSwitch.addEventListener('click', function() {
+      gtag('event', 'language_switch', {
+        event_category: 'engagement',
+        landing: 'alterego'
+      });
+    });
+  }
+});
+</script>
 </body>
 </html>
