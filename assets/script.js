@@ -91,16 +91,43 @@
         });
     }
 
-    // Video carousel play/pause
-    document.querySelectorAll('.video-card').forEach(card => {
-        const video = card.querySelector('video');
-        const btn = card.querySelector('.video-play-btn');
+    // Video carousel
+    const cards = Array.from(document.querySelectorAll('.video-card'));
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    let currentIndex = 0;
 
+    function goToSlide(index) {
+        // Pause all videos
+        cards.forEach(c => {
+            const v = c.querySelector('video');
+            v.pause();
+            c.classList.remove('playing', 'active');
+        });
+        dots.forEach(d => d.classList.remove('active'));
+
+        currentIndex = (index + cards.length) % cards.length;
+        cards[currentIndex].classList.add('active');
+        dots[currentIndex].classList.add('active');
+    }
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+        nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+    }
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+    });
+
+    // Play/pause on click
+    cards.forEach(card => {
         card.addEventListener('click', () => {
+            const video = card.querySelector('video');
             if (video.paused) {
-                // Pause all other videos
-                document.querySelectorAll('.video-card video').forEach(v => {
-                    if (v !== video) { v.pause(); v.parentElement.classList.remove('playing'); }
+                cards.forEach(c => {
+                    if (c !== card) { c.querySelector('video').pause(); c.classList.remove('playing'); }
                 });
                 video.muted = false;
                 video.play();
@@ -111,6 +138,19 @@
             }
         });
     });
+
+    // Swipe support
+    let touchStartX = 0;
+    const viewport = document.querySelector('.carousel-viewport');
+    if (viewport) {
+        viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        viewport.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                goToSlide(currentIndex + (diff > 0 ? 1 : -1));
+            }
+        });
+    }
 
     // Reveal on scroll
     const targets = document.querySelectorAll(
