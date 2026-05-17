@@ -140,7 +140,8 @@
             'contacto.title.full': 'Solicitar una\n                <span class="grad-text">demo gratuita.</span>',
             'contacto.label.company.full': 'Empresa <span class="form-optional">(opcional)</span>',
             'contacto.submit.full': 'Enviar mensaje <span class="btn-arrow">→</span>',
-            'footer.copy.full': '© <span id="year"></span> Alter Ego — Producto de\n            <a href="https://www.unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.'
+            'footer.copy.full': '© <span id="year"></span> Alter Ego — Producto de\n            <a href="https://www.unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.',
+            'whatsapp.url': 'https://wa.me/59899028390?text=Hola%20quiero%20info%20de%20Alter%20Ego'
         },
         en: {
             // Meta
@@ -280,7 +281,8 @@
             'contacto.title.full': 'Request a\n                <span class="grad-text">free demo.</span>',
             'contacto.label.company.full': 'Company <span class="form-optional">(optional)</span>',
             'contacto.submit.full': 'Send message <span class="btn-arrow">→</span>',
-            'footer.copy.full': '© <span id="year"></span> Alter Ego — A product by\n            <a href="https://www.unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.'
+            'footer.copy.full': '© <span id="year"></span> Alter Ego — A product by\n            <a href="https://www.unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.',
+            'whatsapp.url': 'https://wa.me/59899028390?text=Hi%20I%20want%20info%20about%20Alter%20Ego'
         }
     };
 
@@ -339,6 +341,10 @@
         // Update switcher label
         var switcher = document.getElementById('langSwitch');
         if (switcher) switcher.textContent = lang === 'es' ? 'EN' : 'ES';
+
+        // Update WhatsApp button href
+        var waBtn = document.getElementById('whatsappBtn');
+        if (waBtn && t['whatsapp.url']) waBtn.setAttribute('href', t['whatsapp.url']);
 
         // Save preference
         localStorage.setItem('alterego-lang', lang);
