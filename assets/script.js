@@ -91,66 +91,74 @@
         });
     }
 
-    // Video carousel
-    const cards = Array.from(document.querySelectorAll('.video-card'));
-    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    // Video carousel — scroll arrows
+    const track = document.getElementById('videoTrack');
     const prevBtn = document.getElementById('carouselPrev');
     const nextBtn = document.getElementById('carouselNext');
-    let currentIndex = 0;
 
-    function goToSlide(index) {
-        // Pause all videos
-        cards.forEach(c => {
-            const v = c.querySelector('video');
-            v.pause();
-            c.classList.remove('playing', 'active');
-        });
-        dots.forEach(d => d.classList.remove('active'));
-
-        currentIndex = (index + cards.length) % cards.length;
-        cards[currentIndex].classList.add('active');
-        dots[currentIndex].classList.add('active');
+    if (track && prevBtn && nextBtn) {
+        const scrollAmount = () => {
+            const card = track.querySelector('.video-card');
+            return card ? card.offsetWidth + 18 : 200;
+        };
+        prevBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
+        nextBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
     }
 
-    if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
-        nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+    // Video popup
+    const cards = Array.from(document.querySelectorAll('.video-card'));
+    const popup = document.getElementById('videoPopup');
+    const popupVideo = document.getElementById('popupVideo');
+    const popupClose = document.getElementById('popupClose');
+    const popupPrev = document.getElementById('popupPrev');
+    const popupNext = document.getElementById('popupNext');
+    const popupOverlay = popup ? popup.querySelector('.video-popup-overlay') : null;
+    let popupIndex = 0;
+
+    function openPopup(index) {
+        popupIndex = index;
+        const src = cards[index].querySelector('video').src;
+        const poster = cards[index].querySelector('video').poster;
+        popupVideo.src = src;
+        popupVideo.poster = poster;
+        popupVideo.muted = false;
+        popupVideo.play();
+        popup.classList.add('open');
+        document.body.style.overflow = 'hidden';
     }
 
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+    function closePopup() {
+        popupVideo.pause();
+        popupVideo.src = '';
+        popup.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function popupGo(dir) {
+        popupIndex = (popupIndex + dir + cards.length) % cards.length;
+        const src = cards[popupIndex].querySelector('video').src;
+        const poster = cards[popupIndex].querySelector('video').poster;
+        popupVideo.src = src;
+        popupVideo.poster = poster;
+        popupVideo.muted = false;
+        popupVideo.play();
+    }
+
+    cards.forEach((card, i) => {
+        card.addEventListener('click', () => openPopup(i));
     });
 
-    // Play/pause on click
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            const video = card.querySelector('video');
-            if (video.paused) {
-                cards.forEach(c => {
-                    if (c !== card) { c.querySelector('video').pause(); c.classList.remove('playing'); }
-                });
-                video.muted = false;
-                video.play();
-                card.classList.add('playing');
-            } else {
-                video.pause();
-                card.classList.remove('playing');
-            }
-        });
-    });
+    if (popupClose) popupClose.addEventListener('click', closePopup);
+    if (popupOverlay) popupOverlay.addEventListener('click', closePopup);
+    if (popupPrev) popupPrev.addEventListener('click', () => popupGo(-1));
+    if (popupNext) popupNext.addEventListener('click', () => popupGo(1));
 
-    // Swipe support
-    let touchStartX = 0;
-    const viewport = document.querySelector('.carousel-viewport');
-    if (viewport) {
-        viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-        viewport.addEventListener('touchend', e => {
-            const diff = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 50) {
-                goToSlide(currentIndex + (diff > 0 ? 1 : -1));
-            }
-        });
-    }
+    document.addEventListener('keydown', (e) => {
+        if (!popup || !popup.classList.contains('open')) return;
+        if (e.key === 'Escape') closePopup();
+        if (e.key === 'ArrowLeft') popupGo(-1);
+        if (e.key === 'ArrowRight') popupGo(1);
+    });
 
     // Reveal on scroll
     const targets = document.querySelectorAll(

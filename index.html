@@ -367,56 +367,53 @@
         </header>
     </div>
 
-    <div class="container">
-        <div class="video-carousel" id="videoCarousel">
-            <button class="carousel-arrow carousel-arrow-left" id="carouselPrev" aria-label="Anterior">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
-            </button>
+    <div class="video-carousel-wrap">
+        <button class="carousel-nav carousel-nav-left" id="carouselPrev" aria-label="Anterior">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
 
-            <div class="carousel-viewport">
-                <div class="video-card active">
-                    <video src="assets/videos/demo-1.mp4" poster="assets/videos/poster-1.jpg" playsinline muted loop preload="metadata"></video>
-                    <button class="video-play-btn" aria-label="Reproducir video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-                    </button>
-                </div>
-                <div class="video-card">
-                    <video src="assets/videos/demo-2.mp4" poster="assets/videos/poster-2.jpg" playsinline muted loop preload="metadata"></video>
-                    <button class="video-play-btn" aria-label="Reproducir video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-                    </button>
-                </div>
-                <div class="video-card">
-                    <video src="assets/videos/demo-3.mp4" poster="assets/videos/poster-3.jpg" playsinline muted loop preload="metadata"></video>
-                    <button class="video-play-btn" aria-label="Reproducir video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-                    </button>
-                </div>
-                <div class="video-card">
-                    <video src="assets/videos/demo-4.mp4" poster="assets/videos/poster-4.jpg" playsinline muted loop preload="metadata"></video>
-                    <button class="video-play-btn" aria-label="Reproducir video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-                    </button>
-                </div>
-                <div class="video-card">
-                    <video src="assets/videos/demo-5.mp4" poster="assets/videos/poster-5.jpg" playsinline muted loop preload="metadata"></video>
-                    <button class="video-play-btn" aria-label="Reproducir video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-                    </button>
-                </div>
+        <div class="video-carousel-track" id="videoTrack">
+            <div class="video-card" data-index="0">
+                <video src="assets/videos/demo-1.mp4" poster="assets/videos/poster-1.jpg" playsinline muted loop preload="metadata"></video>
+                <div class="video-play-btn"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg></div>
             </div>
-
-            <button class="carousel-arrow carousel-arrow-right" id="carouselNext" aria-label="Siguiente">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            </button>
-
-            <div class="carousel-dots" id="carouselDots">
-                <button class="carousel-dot active" data-index="0"></button>
-                <button class="carousel-dot" data-index="1"></button>
-                <button class="carousel-dot" data-index="2"></button>
-                <button class="carousel-dot" data-index="3"></button>
-                <button class="carousel-dot" data-index="4"></button>
+            <div class="video-card" data-index="1">
+                <video src="assets/videos/demo-2.mp4" poster="assets/videos/poster-2.jpg" playsinline muted loop preload="metadata"></video>
+                <div class="video-play-btn"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg></div>
             </div>
+            <div class="video-card" data-index="2">
+                <video src="assets/videos/demo-3.mp4" poster="assets/videos/poster-3.jpg" playsinline muted loop preload="metadata"></video>
+                <div class="video-play-btn"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg></div>
+            </div>
+            <div class="video-card" data-index="3">
+                <video src="assets/videos/demo-4.mp4" poster="assets/videos/poster-4.jpg" playsinline muted loop preload="metadata"></video>
+                <div class="video-play-btn"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg></div>
+            </div>
+            <div class="video-card" data-index="4">
+                <video src="assets/videos/demo-5.mp4" poster="assets/videos/poster-5.jpg" playsinline muted loop preload="metadata"></video>
+                <div class="video-play-btn"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg></div>
+            </div>
+        </div>
+
+        <button class="carousel-nav carousel-nav-right" id="carouselNext" aria-label="Siguiente">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <!-- Video Popup -->
+    <div class="video-popup" id="videoPopup">
+        <div class="video-popup-overlay"></div>
+        <div class="video-popup-content">
+            <button class="video-popup-close" id="popupClose" aria-label="Cerrar">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <button class="video-popup-nav video-popup-prev" id="popupPrev" aria-label="Anterior">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <video class="video-popup-player" id="popupVideo" playsinline loop preload="metadata"></video>
+            <button class="video-popup-nav video-popup-next" id="popupNext" aria-label="Siguiente">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
         </div>
     </div>
 </section>
