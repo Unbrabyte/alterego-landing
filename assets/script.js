@@ -46,17 +46,27 @@
             var sendingText = (window.AlterEgoI18n && window.AlterEgoI18n.t('contacto.submitting')) || 'Enviando...';
             submitBtn.textContent = sendingText;
 
+            const nameVal = form.elements.name.value;
+            const emailVal = form.elements.email.value;
+            const companyVal = form.elements.company.value || 'No especificada';
+            const messageVal = form.elements.message.value;
+
             const data = {
-                name: form.name.value,
-                email: form.email.value,
-                company: form.company.value || 'No especificada',
-                message: form.message.value,
-                _subject: 'Demo Alter Ego — ' + form.name.value,
-                _captcha: 'false'
+                access_key: 'c1873c90-a887-4753-b76b-1ba587b358f8',
+                name: nameVal,
+                email: emailVal,
+                company: companyVal,
+                message: messageVal,
+                subject: 'Demo Alter Ego — ' + nameVal
+            };
+
+            const resetBtn = () => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = (window.AlterEgoI18n && window.AlterEgoI18n.t('contacto.submit.full')) || 'Enviar mensaje <span class="btn-arrow">→</span>';
             };
 
             try {
-                const res = await fetch('https://formsubmit.co/ajax/info@unbrabyte.com', {
+                const res = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -67,18 +77,16 @@
 
                 const result = await res.json();
 
-                if (result.success === 'true' || res.ok) {
+                if (result.success) {
                     form.style.display = 'none';
                     successEl.classList.add('is-visible');
                 } else {
                     errorEl.classList.add('is-visible');
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = (window.AlterEgoI18n && window.AlterEgoI18n.t('contacto.submit.full')) || 'Enviar mensaje <span class="btn-arrow">→</span>';
+                    resetBtn();
                 }
             } catch (err) {
                 errorEl.classList.add('is-visible');
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Enviar mensaje <span class="btn-arrow">→</span>';
+                resetBtn();
             }
         });
     }
