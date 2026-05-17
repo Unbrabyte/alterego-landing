@@ -698,6 +698,106 @@ ul { list-style: none; }
 }
 
 /* =========================================================
+   VIDEO CAROUSEL
+   ========================================================= */
+.video-carousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 0 32px;
+}
+
+.video-carousel::-webkit-scrollbar { display: none; }
+
+.video-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 max(24px, calc((100vw - var(--container)) / 2 + 24px));
+    width: max-content;
+}
+
+.video-card {
+    scroll-snap-align: center;
+    position: relative;
+    width: 220px;
+    aspect-ratio: 9 / 16;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 50px -15px rgba(59, 109, 255, 0.25);
+    border-color: var(--border-strong);
+}
+
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-play-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    transition: background 0.25s, opacity 0.25s;
+    backdrop-filter: blur(2px);
+}
+
+.video-play-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.video-card.playing .video-play-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.video-card.playing:hover .video-play-btn {
+    opacity: 1;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.video-carousel-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-top: 8px;
+    animation: hintPulse 2s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+@media (min-width: 768px) {
+    .video-card { width: 260px; }
+}
+
+@media (min-width: 1024px) {
+    .video-card { width: 280px; }
+    .video-carousel-hint { display: none; }
+}
+
+/* =========================================================
    ENTERPRISE FEATURES
    ========================================================= */
 .enterprise-grid { gap: 18px; }

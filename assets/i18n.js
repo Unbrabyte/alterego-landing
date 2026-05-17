@@ -85,6 +85,12 @@
             'datos.quote': '"El cliente deja de esperar respuestas. El equipo deja de repetir lo mismo cien veces al día."',
             'datos.quote.caption': 'Diseñado para que la IA trabaje por vos',
 
+            // Demos
+            'demos.kicker': 'Miralo en acción',
+            'demos.title.full': 'Así se ve <span class="grad-text">Alter Ego.</span>',
+            'demos.subtitle': 'Mirá cómo funciona en situaciones reales. Cada video muestra una parte distinta de la plataforma.',
+            'demos.hint': 'Deslizá para ver más',
+
             // Empresas
             'empresas.kicker': 'Configuración profesional',
             'empresas.title': 'Para empresas que quieren',
@@ -218,6 +224,12 @@
             'datos.card4.text': 'Send communications, promotions or notices to segmented contacts with dynamic templates and full traceability.',
             'datos.quote': '"Customers stop waiting for answers. Your team stops repeating the same thing a hundred times a day."',
             'datos.quote.caption': 'Designed to let AI work for you',
+
+            // Demos
+            'demos.kicker': 'See it in action',
+            'demos.title.full': 'This is how <span class="grad-text">Alter Ego</span> looks.',
+            'demos.subtitle': 'See how it works in real scenarios. Each video showcases a different part of the platform.',
+            'demos.hint': 'Swipe for more',
 
             // Empresas
             'empresas.kicker': 'Professional setup',

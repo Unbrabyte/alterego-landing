@@ -91,6 +91,27 @@
         });
     }
 
+    // Video carousel play/pause
+    document.querySelectorAll('.video-card').forEach(card => {
+        const video = card.querySelector('video');
+        const btn = card.querySelector('.video-play-btn');
+
+        card.addEventListener('click', () => {
+            if (video.paused) {
+                // Pause all other videos
+                document.querySelectorAll('.video-card video').forEach(v => {
+                    if (v !== video) { v.pause(); v.parentElement.classList.remove('playing'); }
+                });
+                video.muted = false;
+                video.play();
+                card.classList.add('playing');
+            } else {
+                video.pause();
+                card.classList.remove('playing');
+            }
+        });
+    });
+
     // Reveal on scroll
     const targets = document.querySelectorAll(
         '.section-head, .card, .feature, .feature-spotlight, .stat-card, .enterprise-feat, .replace-box, .quote, .contact-form-wrap'
