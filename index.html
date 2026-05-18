@@ -77,6 +77,12 @@
     </script>
 </head>
 <body>
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111;color:#ccc;padding:14px 24px;font-size:0.85rem;z-index:99999;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-family:Inter,sans-serif;">
+  <span>Este sitio usa cookies y herramientas de análisis para mejorar tu experiencia. <a href="/privacidad.html" style="color:#7c8aff;text-decoration:underline;">Política de privacidad</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOk','1');" style="background:#7c8aff;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-size:0.85rem;">Aceptar</button>
+</div>
+<script>if(!localStorage.getItem('cookieOk'))document.getElementById('cookieBanner').style.display='flex';</script>
 
 <!-- ============== BACKGROUND DECORATIVE LAYERS ============== -->
 <div class="bg-grid" aria-hidden="true"></div>
@@ -602,6 +608,9 @@
             © <span id="year"></span> Alter Ego — Producto de
             <a href="https://unbrabyte.com" target="_blank" rel="noopener">unbraByte</a>.
         </p>
+        <p style="margin-top:8px;">
+            <a href="/privacidad.html" style="color:#888;text-decoration:underline;font-size:0.8rem;">Privacidad</a> · <a href="/terminos.html" style="color:#888;text-decoration:underline;font-size:0.8rem;">Términos</a>
+        </p>
     </div>
 </footer>
 
@@ -625,6 +634,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event_label: el.textContent.trim(),
         landing: 'alterego'
       });
+      if (typeof fbq === 'function') fbq('track', 'ViewContent', { content_name: 'demo_section', landing: 'alterego' });
     });
   });
 
@@ -637,6 +647,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event_label: 'contact_form',
         landing: 'alterego'
       });
+      if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'contact_form', landing: 'alterego' });
     });
   }
 
@@ -650,6 +661,18 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+
+  // Track WhatsApp clicks
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'whatsapp_contact', {
+        event_category: 'conversion',
+        event_label: 'whatsapp_click',
+        landing: 'alterego'
+      });
+      if (typeof fbq === 'function') fbq('track', 'Contact', { content_name: 'whatsapp', landing: 'alterego' });
+    });
+  });
 });
 </script>
 </body>
