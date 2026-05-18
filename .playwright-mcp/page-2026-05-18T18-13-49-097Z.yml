@@ -1,0 +1,115 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "PageSpeed Insights logo PageSpeed Insights" [ref=e3] [cursor=pointer]:
+      - /url: ./
+      - img "PageSpeed Insights logo" [ref=e4]
+      - generic [ref=e5]: PageSpeed Insights
+    - generic [ref=e6]:
+      - button "Copiar enlace" [ref=e74]:
+        - img [ref=e77]
+        - generic [ref=e80]: Copiar enlace
+      - generic [ref=e8]:
+        - generic [ref=e10]: Documentos
+        - link "Documentos" [ref=e11] [cursor=pointer]:
+          - /url: https://developers.google.com/speed/docs/insights/v5/about
+  - generic [ref=e18]:
+    - generic [ref=e81]:
+      - generic [ref=e82]: Este sitio usa cookies de Google para ofrecer sus servicios y analizar el tráfico.
+      - generic [ref=e83]:
+        - generic [ref=e85]:
+          - generic [ref=e87]: Más información
+          - link "Más información" [ref=e88] [cursor=pointer]:
+            - /url: https://policies.google.com/technologies/cookies
+        - button "Entendido" [ref=e90]:
+          - generic [ref=e93]: Entendido
+    - generic [ref=e94]: Informe del 18 may 2026, 15:14:19
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - textbox [ref=e98]:
+          - /placeholder: Escribe la URL de una página web
+          - text: https://unbrabyte.com/
+        - paragraph [ref=e100]: Introduce una URL válida
+      - button "Analizar" [ref=e102]:
+        - generic [ref=e105]: Analizar
+    - generic [ref=e108]:
+      - tablist [ref=e109]:
+        - generic [ref=e112]:
+          - tab "Móvil" [selected] [ref=e113] [cursor=pointer]:
+            - generic:
+              - generic: smartphone
+              - generic: Móvil
+          - tab "Ordenador" [ref=e115] [cursor=pointer]:
+            - generic:
+              - generic: computer
+              - generic: Ordenador
+      - tabpanel "Móvil" [ref=e117]:
+        - generic [ref=e119]:
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - generic [ref=e123]: Descubre lo que experimentan tus usuarios reales
+              - generic [ref=e125]:
+                - button "button" [ref=e127] [cursor=pointer]:
+                  - img [ref=e129]
+                - generic [ref=e131]: No hay datos
+            - separator [ref=e132]
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - generic [ref=e137]: loading
+                - progressbar [ref=e138]:
+                  - img [ref=e140]
+                  - generic [ref=e144]:
+                    - img [ref=e146]
+                    - img [ref=e149]
+                    - img [ref=e152]
+              - generic [ref=e154]: Diagnostica problemas de rendimiento
+            - separator [ref=e155]
+  - contentinfo [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Más información en PageSpeed Insights
+          - link "Novedades" [ref=e37] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/release_notes
+          - link "Documentación" [ref=e39] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/v5/about
+          - link "Más información sobre el rendimiento web" [ref=e41] [cursor=pointer]:
+            - /url: https://developers.google.com/speed
+          - link "Haz preguntas en Stack Overflow" [ref=e43] [cursor=pointer]:
+            - /url: https://stackoverflow.com/questions/tagged/pagespeed-insights
+          - link "Lista de distribución" [ref=e45] [cursor=pointer]:
+            - /url: https://groups.google.com/g/pagespeed-insights-discuss
+        - generic [ref=e46]:
+          - generic [ref=e47]: Contenido relacionado
+          - link "Actualizaciones" [ref=e49] [cursor=pointer]:
+            - /url: https://developer.chrome.com/blog
+          - link "Aspectos básicos de la Web" [ref=e51] [cursor=pointer]:
+            - /url: https://developers.google.com/focus/web-development
+          - link "Casos de éxito" [ref=e53] [cursor=pointer]:
+            - /url: https://web.dev/case-studies
+          - link "Pódcasts" [ref=e55] [cursor=pointer]:
+            - /url: https://web.dev/shows
+        - generic [ref=e56]:
+          - generic [ref=e57]: Contacto
+          - link "Twitter" [ref=e59] [cursor=pointer]:
+            - /url: https://twitter.com/ChromiumDev
+          - link "YouTube" [ref=e61] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/ChromeDevelopers
+      - generic [ref=e62]:
+        - link "Google Developers Logo" [ref=e63] [cursor=pointer]:
+          - /url: https://developers.google.com/
+          - img "Google Developers Logo" [ref=e64]
+        - link "Chrome" [ref=e65] [cursor=pointer]:
+          - /url: https://developer.chrome.com/
+        - link "Firebase" [ref=e66] [cursor=pointer]:
+          - /url: https://firebase.google.com/
+        - link "Todos los productos" [ref=e67] [cursor=pointer]:
+          - /url: https://developers.google.com/products/
+      - generic [ref=e68]:
+        - link "Política de Términos y Privacidad" [ref=e70] [cursor=pointer]:
+          - /url: https://policies.google.com/
+        - generic [ref=e71]:
+          - text: Para obtener más información, consulta las
+          - link "Políticas del Sitio Google Developers" [ref=e72] [cursor=pointer]:
+            - /url: https://developers.google.com/terms/site-policies
+          - text: .

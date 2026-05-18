@@ -1,0 +1,231 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - text: Este sitio usa cookies y herramientas de análisis para mejorar tu experiencia.
+      - link "Política de privacidad" [ref=e4] [cursor=pointer]:
+        - /url: /privacidad.html
+    - button "Aceptar" [ref=e5] [cursor=pointer]
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "Alter Ego" [ref=e8] [cursor=pointer]:
+        - /url: "#top"
+        - img [ref=e10]
+        - generic [ref=e16]: AlterEgo
+      - navigation "Navegación principal" [ref=e17]:
+        - link "Producto" [ref=e18] [cursor=pointer]:
+          - /url: "#producto"
+        - link "Funciones" [ref=e19] [cursor=pointer]:
+          - /url: "#funciones"
+        - link "Empresas" [ref=e20] [cursor=pointer]:
+          - /url: "#empresas"
+      - button "Switch language" [ref=e21] [cursor=pointer]: EN
+      - link "Solicitar demo" [ref=e22] [cursor=pointer]:
+        - /url: "#contacto"
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e28]: Plataforma de bots conversacionales IA
+      - heading "Tu asistente IA, en tu negocio." [level=1] [ref=e29]
+      - paragraph [ref=e30]: Conversaciones, leads, contactos y atención automatizada — todo en un lugar. Diseñado para que tu equipo trabaje más eficientemente y tus clientes estén más atendidos.
+      - generic [ref=e31]:
+        - link "Solicitar demo" [ref=e32] [cursor=pointer]:
+          - /url: "#contacto"
+        - link "Ver cómo funciona →" [ref=e33] [cursor=pointer]:
+          - /url: "#producto"
+          - text: Ver cómo funciona
+          - generic [ref=e34]: →
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - generic [ref=e38]: WhatsApp & Web
+        - listitem [ref=e39]:
+          - generic [ref=e41]: IA Conversacional
+        - listitem [ref=e42]:
+          - generic [ref=e44]: Multi-canal
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]: Para tu empresa
+        - heading "El asistente que tu empresa estaba esperando." [level=2] [ref=e49]
+        - paragraph [ref=e50]: "Alter Ego es la plataforma que unifica todo lo que necesita tu equipo de atención: gestioná desde tu panel, mantené a tus clientes informados y respondidos 24/7. Sin colas de espera, sin clientes perdidos, sin respuestas tarde."
+      - generic [ref=e51]:
+        - article [ref=e52]:
+          - img [ref=e54]
+          - heading "Para tu negocio" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Atendé miles de consultas en simultáneo con bots inteligentes que aprenden y se adaptan a tu marca.
+        - article [ref=e61]:
+          - img [ref=e63]
+          - heading "Para tus clientes" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Respuesta inmediata, atención personalizada. Todo queda registrado para una experiencia consistente y profesional.
+      - generic [ref=e67]:
+        - generic [ref=e68]: Lo que Alter Ego reemplaza
+        - list [ref=e69]:
+          - listitem [ref=e70]:
+            - generic [ref=e71]: ×
+            - generic [ref=e72]: Bandejas de mail saturadas
+          - listitem [ref=e73]:
+            - generic [ref=e74]: ×
+            - generic [ref=e75]: Operadores agotados de repetir lo mismo
+          - listitem [ref=e76]:
+            - generic [ref=e77]: ×
+            - generic [ref=e78]: Llamadas sin respuesta fuera de horario
+          - listitem [ref=e79]:
+            - generic [ref=e80]: ×
+            - generic [ref=e81]: Clientes esperando horas por una respuesta
+          - listitem [ref=e82]:
+            - generic [ref=e83]: ×
+            - generic [ref=e84]: Datos perdidos en planillas dispersas
+          - listitem [ref=e85]:
+            - generic [ref=e86]: ×
+            - generic [ref=e87]: Consultas olvidadas que nadie siguió
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]: Módulo conversacional
+        - heading "Atender clientes nunca fue tan inteligente." [level=2] [ref=e92]
+      - generic [ref=e93]:
+        - img [ref=e95]
+        - generic [ref=e100]:
+          - heading "Bot IA con personalidad propia" [level=3] [ref=e101]
+          - paragraph [ref=e102]: Configurás el tono, el conocimiento y el estilo del bot. Alter Ego conversa como tu marca, responde con contexto y aprende de cada interacción. Todo automático. Todo natural.
+      - generic [ref=e103]:
+        - article [ref=e104]:
+          - heading "Personalidad configurable" [level=4] [ref=e106]
+          - paragraph [ref=e107]: Definí el tono, registro, estilo y carácter del asistente.
+        - article [ref=e108]:
+          - heading "Prompts del sistema" [level=4] [ref=e110]
+          - paragraph [ref=e111]: Instrucciones detalladas para que el bot actúe como un experto.
+        - article [ref=e112]:
+          - heading "Conversaciones 24/7" [level=4] [ref=e114]
+          - paragraph [ref=e115]: Tu negocio no duerme. Tu bot tampoco.
+        - article [ref=e116]:
+          - heading "Historial completo" [level=4] [ref=e118]
+          - paragraph [ref=e119]: Todas las conversaciones registradas, buscables y exportables.
+        - article [ref=e120]:
+          - heading "Probador de bots" [level=4] [ref=e122]
+          - paragraph [ref=e123]: Testeá tu bot antes de salir a producción. Iterá sin riesgo.
+        - article [ref=e124]:
+          - heading "Multi-idioma" [level=4] [ref=e126]
+          - paragraph [ref=e127]: Atendé en español, inglés o el idioma que necesite tu mercado.
+      - generic [ref=e128]:
+        - img [ref=e130]
+        - generic [ref=e133]:
+          - heading "Integración con WhatsApp Business" [level=4] [ref=e134]
+          - paragraph [ref=e135]: Conectá tu instancia de WhatsApp y empezá a atender clientes desde el mismo número que ya usan. Cero fricción. Cero apps nuevas para descargar. Tu cliente, donde ya está.
+          - generic [ref=e136]:
+            - generic [ref=e137]: WhatsApp Business
+            - generic [ref=e138]: Web embebido
+            - generic [ref=e139]: API REST
+            - generic [ref=e140]: Notificaciones
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]: Datos de tu negocio
+        - heading "Tu base de datos siempre organizada." [level=2] [ref=e145]
+        - paragraph [ref=e146]: Cada conversación es una oportunidad. Alter Ego captura, organiza y deriva la información automáticamente. Nunca más perdés un lead, una consulta o un contacto importante.
+      - generic [ref=e147]:
+        - article [ref=e148]:
+          - img [ref=e150]
+          - heading "Formularios inteligentes" [level=3] [ref=e153]
+          - paragraph [ref=e154]: Creá formularios que el bot completa charlando con el cliente. Sin formularios fríos. Datos limpios y completos en cada conversación.
+        - article [ref=e155]:
+          - img [ref=e157]
+          - heading "Contactos centralizados" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Toda la información de cada cliente en un solo lugar. Historial, preferencias, etiquetas y datos de contacto siempre actualizados.
+        - article [ref=e164]:
+          - img [ref=e166]
+          - heading "Derivaciones a humanos" [level=3] [ref=e168]
+          - paragraph [ref=e169]: Cuando el bot detecta que necesita ayuda humana, transfiere la conversación a un agente con todo el contexto previo.
+        - article [ref=e170]:
+          - img [ref=e172]
+          - heading "Envíos masivos" [level=3] [ref=e174]
+          - paragraph [ref=e175]: Mandá comunicaciones, promociones o avisos a tus contactos segmentados con plantillas dinámicas y trazabilidad completa.
+      - figure "Diseñado para que la IA trabaje por vos" [ref=e176]:
+        - text: "\""
+        - blockquote [ref=e177]: "\"El cliente deja de esperar respuestas. El equipo deja de repetir lo mismo cien veces al día.\""
+        - generic [ref=e178]: Diseñado para que la IA trabaje por vos
+    - generic [ref=e179]:
+      - generic [ref=e181]:
+        - generic [ref=e182]: Miralo en acción
+        - heading "Así se ve Alter Ego." [level=2] [ref=e183]
+        - paragraph [ref=e184]: Mirá cómo funciona en situaciones reales. Cada video muestra una parte distinta de la plataforma.
+      - generic [ref=e185]:
+        - button "Anterior" [ref=e186] [cursor=pointer]:
+          - img [ref=e187]
+        - generic [ref=e189]:
+          - img [ref=e193] [cursor=pointer]
+          - img [ref=e198] [cursor=pointer]
+          - img [ref=e203] [cursor=pointer]
+          - img [ref=e208] [cursor=pointer]
+          - img [ref=e213] [cursor=pointer]
+        - button "Siguiente" [ref=e215] [cursor=pointer]:
+          - img [ref=e216]
+    - generic [ref=e219]:
+      - generic [ref=e220]:
+        - generic [ref=e221]: Configuración profesional
+        - heading "Para empresas que quieren escalar, no saturarse." [level=2] [ref=e222]
+        - paragraph [ref=e223]: Alter Ego se adapta a tu negocio, no al revés. Manejá uno o varios bots con la misma facilidad. Todo medible, todo configurable, todo en orden.
+      - article [ref=e225]:
+        - generic [ref=e226]: ∞
+        - generic [ref=e227]: Conversaciones simultáneas, sin límites de capacidad
+      - generic [ref=e228]:
+        - article [ref=e229]:
+          - img [ref=e231]
+          - generic [ref=e234]:
+            - heading "Multi-proyecto" [level=3] [ref=e235]
+            - paragraph [ref=e236]: Manejá distintos bots para distintas marcas o productos desde un solo panel. Cambiá entre proyectos con un clic.
+        - article [ref=e237]:
+          - img [ref=e239]
+          - generic [ref=e242]:
+            - heading "Módulos configurables" [level=3] [ref=e243]
+            - paragraph [ref=e244]: Activá o desactivá funcionalidades según tu necesidad. Configurá horarios, idiomas, derivaciones y mucho más.
+        - article [ref=e245]:
+          - img [ref=e247]
+          - generic [ref=e250]:
+            - heading "Dashboard de métricas" [level=3] [ref=e251]
+            - paragraph [ref=e252]: Conversaciones, contactos, bots activos, derivaciones — todo en tiempo real. Tomá decisiones con datos reales.
+        - article [ref=e253]:
+          - img [ref=e255]
+          - generic [ref=e258]:
+            - heading "Gestión de usuarios" [level=3] [ref=e259]
+            - paragraph [ref=e260]: Sumá miembros de tu equipo con distintos roles y permisos. Cada uno con su propio acceso y trazabilidad.
+    - generic [ref=e262]:
+      - generic [ref=e263]:
+        - generic [ref=e266]: Empezá hoy
+        - heading "Solicitar una demo gratuita." [level=2] [ref=e267]
+        - paragraph [ref=e268]: Completá el formulario y nos ponemos en contacto con vos. Demo sin costo, configuración en minutos, soporte real desde el primer día.
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - generic [ref=e272]: Nombre
+          - textbox "Nombre" [ref=e273]:
+            - /placeholder: Tu nombre
+        - generic [ref=e274]:
+          - generic [ref=e275]: Email
+          - textbox "Email" [ref=e276]:
+            - /placeholder: tu@email.com
+        - generic [ref=e277]:
+          - generic [ref=e278]: Empresa (opcional)
+          - textbox "Empresa (opcional)" [ref=e279]:
+            - /placeholder: Nombre de tu empresa
+        - generic [ref=e280]:
+          - generic [ref=e281]: Mensaje
+          - textbox "Mensaje" [ref=e282]:
+            - /placeholder: Contanos qué necesitás o preguntanos lo que quieras
+        - button "Enviar mensaje →" [ref=e283] [cursor=pointer]:
+          - text: Enviar mensaje
+          - generic [ref=e284]: →
+  - contentinfo [ref=e285]:
+    - generic [ref=e286]:
+      - link "Alter Ego" [ref=e287] [cursor=pointer]:
+        - /url: "#top"
+        - img [ref=e289]
+        - generic [ref=e295]: AlterEgo
+      - paragraph [ref=e296]:
+        - text: © 2026 Alter Ego — Producto de
+        - link "unbraByte" [ref=e297] [cursor=pointer]:
+          - /url: https://www.unbrabyte.com
+        - text: .
+      - paragraph [ref=e298]:
+        - link "Privacidad" [ref=e299] [cursor=pointer]:
+          - /url: /privacidad.html
+        - text: ·
+        - link "Términos" [ref=e300] [cursor=pointer]:
+          - /url: /terminos.html
+  - link "Escribinos por WhatsApp" [ref=e301] [cursor=pointer]:
+    - /url: https://wa.me/59899028390?text=Hola%20quiero%20info%20de%20Alter%20Ego
+    - img [ref=e303]

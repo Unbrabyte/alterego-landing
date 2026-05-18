@@ -180,7 +180,7 @@
 
         setTimeout(() => {
             targets.forEach(el => el.classList.add('is-visible'));
-        }, 2000);
+        }, 100);
     } else {
         targets.forEach(el => el.classList.add('is-visible'));
     }
