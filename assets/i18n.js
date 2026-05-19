@@ -14,6 +14,7 @@
             'nav.features': 'Funciones',
             'nav.enterprise': 'Empresas',
             'nav.demo': 'Solicitar demo',
+            'nav.cases': 'Casos de éxito',
 
             // Hero
             'hero.pill': 'Plataforma de bots conversacionales IA',
@@ -106,6 +107,27 @@
             'empresas.feat4.title': 'Gestión de usuarios',
             'empresas.feat4.text': 'Sumá miembros de tu equipo con distintos roles y permisos. Cada uno con su propio acceso y trazabilidad.',
 
+            // Casos de éxito
+            'casos.kicker': 'Casos de éxito',
+            'casos.subtitle': 'Negocios que transformaron su atención al cliente y escalaron sus operaciones con Alter Ego.',
+            'casos.card1.name': 'Martín López',
+            'casos.card1.role': 'Director — AutoSur Concesionaria',
+            'casos.card1.quote': '"Pasamos de perder el 40% de las consultas a responder el 100% en menos de 30 segundos"',
+            'casos.card1.text': 'AutoSur recibía cientos de consultas diarias por WhatsApp y no daba abasto. Con Alter Ego automatizaron la primera respuesta y la captación de leads. En 3 meses duplicaron sus ventas sin sumar personal.',
+            'casos.card2.name': 'Carolina Vega',
+            'casos.card2.role': 'CEO — Nutri Plan Online',
+            'casos.card2.quote': '"Nuestros pacientes se sienten atendidos las 24 horas, y mi equipo por fin puede enfocarse"',
+            'casos.card2.text': 'Nutri Plan tenía un cuello de botella en la agenda de turnos y seguimiento de pacientes. El bot maneja consultas frecuentes, agenda turnos y envía recordatorios automáticos sin intervención humana.',
+            'casos.card3.name': 'Roberto Almada',
+            'casos.card3.role': 'Gerente — Distribuidora del Norte',
+            'casos.card3.quote': '"Antes tardábamos horas en responder pedidos. Ahora el bot los procesa al instante"',
+            'casos.card3.text': 'Con más de 200 clientes mayoristas, la distribuidora necesitaba agilizar la toma de pedidos. Alter Ego captura cada solicitud, la organiza y la deriva al área correspondiente en tiempo real.',
+            'casos.card4.name': 'Lucía Sánchez',
+            'casos.card4.role': 'Fundadora — Estudio Arq+',
+            'casos.card4.quote': '"Captamos 3 veces más consultas desde que el bot atiende nuestra web y WhatsApp"',
+            'casos.card4.text': 'El estudio recibía consultas dispersas entre email, Instagram y WhatsApp. Centralizaron todo con Alter Ego y ahora cada lead queda registrado con contexto completo para el equipo comercial.',
+            'casos.title.full': 'Resultados reales de empresas\n                <span class="grad-text">reales.</span>',
+
             // Contacto
             'contacto.pill': 'Empezá hoy',
             'contacto.title': 'Solicitar una',
@@ -155,6 +177,7 @@
             'nav.features': 'Features',
             'nav.enterprise': 'Enterprise',
             'nav.demo': 'Request demo',
+            'nav.cases': 'Success stories',
 
             // Hero
             'hero.pill': 'AI Conversational Bots Platform',
@@ -246,6 +269,27 @@
             'empresas.feat3.text': 'Conversations, contacts, active bots, handoffs — all in real time. Make decisions with real data.',
             'empresas.feat4.title': 'User management',
             'empresas.feat4.text': 'Add team members with different roles and permissions. Each with their own access and audit trail.',
+
+            // Success stories
+            'casos.kicker': 'Success stories',
+            'casos.subtitle': 'Businesses that transformed their customer service and scaled their operations with Alter Ego.',
+            'casos.card1.name': 'Martín López',
+            'casos.card1.role': 'Director — AutoSur Dealership',
+            'casos.card1.quote': '"We went from losing 40% of inquiries to answering 100% in under 30 seconds"',
+            'casos.card1.text': 'AutoSur received hundreds of daily WhatsApp inquiries and couldn\'t keep up. With Alter Ego they automated first responses and lead capture. In 3 months they doubled sales without adding staff.',
+            'casos.card2.name': 'Carolina Vega',
+            'casos.card2.role': 'CEO — Nutri Plan Online',
+            'casos.card2.quote': '"Our patients feel attended 24/7, and my team can finally focus"',
+            'casos.card2.text': 'Nutri Plan had a bottleneck in appointment scheduling and patient follow-ups. The bot handles frequent queries, schedules appointments and sends automatic reminders without human intervention.',
+            'casos.card3.name': 'Roberto Almada',
+            'casos.card3.role': 'Manager — Distribuidora del Norte',
+            'casos.card3.quote': '"We used to take hours to respond to orders. Now the bot processes them instantly"',
+            'casos.card3.text': 'With over 200 wholesale clients, the distributor needed to streamline order intake. Alter Ego captures each request, organizes it and routes it to the right team in real time.',
+            'casos.card4.name': 'Lucía Sánchez',
+            'casos.card4.role': 'Founder — Estudio Arq+',
+            'casos.card4.quote': '"We capture 3x more inquiries since the bot handles our website and WhatsApp"',
+            'casos.card4.text': 'The studio received scattered inquiries across email, Instagram and WhatsApp. They centralized everything with Alter Ego and now every lead is logged with full context for the sales team.',
+            'casos.title.full': 'Real results from <span class="grad-text">real businesses.</span>',
 
             // Contacto
             'contacto.pill': 'Start today',
