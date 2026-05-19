@@ -911,6 +911,70 @@ ul { list-style: none; }
 }
 
 /* =========================================================
+   CASOS DE ÉXITO
+   ========================================================= */
+.casos-grid { gap: 24px; }
+
+.caso-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 32px;
+}
+
+.caso-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.caso-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.caso-person {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.caso-person strong {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+.caso-person span {
+    font-size: 12.5px;
+    color: var(--text-dim);
+}
+
+.caso-quote {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    letter-spacing: -0.2px;
+    position: relative;
+}
+
+.caso-text {
+    font-size: 13.5px;
+    color: var(--text-mute);
+    line-height: 1.7;
+}
+
+/* =========================================================
    CTA SECTION
    ========================================================= */
 .cta-section {
